@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Thank you · Liquid Tapestries</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2712%27 fill=%27%231F3B35%27/%3E%3Ctext x=%2732%27 y=%2742%27 font-family=%27Georgia,serif%27 font-size=%2730%27 fill=%27%23F2F0EB%27 text-anchor=%27middle%27%3ELT%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&family=Libre+Caslon+Display&family=Young+Serif&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#1F3B35; --plaster:#F2F0EB; --ink:#1B1A17; --muted:#5F5A52; --accent:#C38A2E; --stamp:#A63A2B; --line:rgba(27,26,23,.15);
+  --display:"Libre Caslon Display", Georgia, serif; --game:"Young Serif", Georgia, serif;
+  --body:"Hanken Grotesk", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--plaster);color:var(--ink);font:18px/1.6 var(--body);min-height:100vh;display:flex;flex-direction:column}
+a{color:inherit}
+.hdr{background:var(--green);color:var(--plaster);padding:18px clamp(16px,4vw,56px);padding-top:calc(18px + env(safe-area-inset-top,0px))}
+.hdr a{font-family:var(--display);font-size:26px;text-decoration:none}
+main{flex:1;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:0}
+.copy{padding:clamp(40px,7vw,96px) clamp(16px,5vw,72px);max-width:680px}
+.stamp{display:inline-block;font-family:var(--game);color:var(--stamp);border:3px solid var(--stamp);padding:4px 16px;transform:rotate(-4deg);font-size:28px;margin-bottom:22px}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(36px,5vw,60px);line-height:1.08;margin:0 0 16px;text-wrap:balance}
+.lede{font-size:20px;margin:0 0 28px}
+h2{font-size:15px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
+ul{list-style:none;padding:0;margin:0 0 32px;border-top:1px solid var(--line)}
+li{padding:12px 0 12px 34px;border-bottom:1px solid var(--line);position:relative}
+li::before{content:"";position:absolute;left:4px;top:18px;width:14px;height:14px;border:2px solid var(--green);border-radius:2px}
+.row{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 22px;border-radius:3px;font-weight:700;text-decoration:none;font-size:17px}
+.btn--accent{background:var(--accent);color:var(--ink)}
+.btn--line{border:2px solid var(--ink)}
+.btn:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+.pic{background:url("../assets/marble-black-backsplash-painted-outlet.jpg") center/cover no-repeat;min-height:320px}
+.note{color:var(--muted);font-size:15px;margin-top:22px}
+@media (max-width:820px){main{grid-template-columns:1fr}.pic{order:-1;min-height:200px}}
+</style>
+</head>
+<body>
+<header class="hdr"><a href="/">Liquid Tapestries</a></header>
+<main>
+  <div class="copy">
+    <span class="stamp">Sent.</span>
+    <h1>Thank you. Dave will call you within one business day.</h1>
+    <p class="lede">Your note went straight to Dave. If it's easier, you can call him any time at <a href="tel:+13172014953"><strong>(317) 201-4953</strong></a>.</p>
+    <h2>While you wait, gather these</h2>
+    <ul>
+      <li>The feel or theme of the house</li>
+      <li>A few reference photos (magazines, Pinterest, Architectural Digest)</li>
+      <li>Fabric, tile or paint samples to match</li>
+      <li>Which rooms and surfaces</li>
+      <li>Your designer's and builder's names, if you have them</li>
+    </ul>
+    <div class="row">
+      <a class="btn btn--accent" href="/">Back to the work</a>
+      <a class="btn btn--line" href="tel:+13172014953">Call Dave</a>
+    </div>
+    <p class="note">Dave's rule: "I can't read your mind." These few things make your first visit count.</p>
+  </div>
+  <div class="pic" role="img" aria-label="Hand-painted black marble backsplash, with the outlet cover painted to match"></div>
+</main>
+</body>
+</html>

@@ -2,12 +2,1129 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Liquid Tapestries · Decorative finishes by Dave Schmidt</title>
 <meta name="robots" content="noindex">
-<title>Liquid Tapestries</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2712%27 fill=%27%231F3B35%27/%3E%3Ctext x=%2732%27 y=%2742%27 font-family=%27Georgia,serif%27 font-size=%2730%27 fill=%27%23F2F0EB%27 text-anchor=%27middle%27%3ELT%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Liquid Tapestries · Decorative finishes by Dave Schmidt">
+<meta property="og:image" content="https://liquidtapestries.com/assets/marble-black-backsplash-painted-outlet.jpg">
+<meta property="og:url" content="https://liquidtapestries.com/">
+<meta name="description" content="Venetian plaster, hand-painted marble, wood graining, murals and sculpted stone, made by hand by Dave Schmidt and his crew of three for Indianapolis-area homes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital@1&family=Young+Serif&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/marble-black-backsplash-painted-outlet.jpg">
 <style>
-*{box-sizing:border-box}body{margin:0;min-height:100svh;display:grid;place-items:center;padding:32px;background:#f8fafb;color:#20333b;font-family:Arial,sans-serif}main{max-width:760px;border-top:3px solid #476c79;padding-top:28px}h1{font-size:clamp(32px,6vw,54px);line-height:1.15;letter-spacing:-.035em;margin:0 0 22px}p{font-size:clamp(18px,2.5vw,23px);line-height:1.65;margin:0}
+:root{
+  --green:#1F3B35;
+  --green-deep:#172D28;
+  --plaster:#F2F0EB;
+  --ochre-plaster:#E6D2AE;
+  --ink:#1B1A17;
+  --ink-70:rgba(27,26,23,.7);
+  --muted:#5F5A52;
+  --accent:#C38A2E;
+  --stamp:#A63A2B;
+  --line:rgba(27,26,23,.15);
+  --line-dark:rgba(242,240,235,.22);
+
+  --t-15:15px; --t-18:18px; --t-22:22px;
+  --t-32:clamp(26px,2.4vw,32px);
+  --t-48:clamp(34px,3.7vw,48px);
+  --t-76:clamp(40px,5.6vw,76px);
+  --t-120:clamp(48px,8.4vw,120px);
+
+  --gut:clamp(16px,4vw,56px);
+  --max:1320px;
+  --hdr:0px;
+  --bar:0px;
+  --r:3px;
+  --game:"Young Serif", Georgia, serif;                         /* the opening question + the stamp only */
+  --display:"Libre Caslon Display", "Libre Caslon Text", Georgia, serif;  /* section heads */
+  --display-it:"Libre Caslon Text", Georgia, serif;
+  --body:"Hanken Grotesk", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:var(--hdr);scroll-padding-bottom:calc(var(--bar) + 16px)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--plaster);color:var(--ink);font:400 var(--t-18)/1.6 var(--body);overflow-x:hidden;padding-bottom:var(--bar)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3,.display{font-family:var(--display);font-weight:400;line-height:1.04;letter-spacing:-.005em;text-wrap:balance;margin:0}
+em{font-family:var(--display-it);font-style:italic}
+p{margin:0 0 1em;max-width:68ch}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px;border-radius:2px}
+.on-dark :focus-visible{outline-color:var(--plaster)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+.vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
+.skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--ink);color:var(--plaster);padding:10px 16px;border-radius:4px;text-decoration:none}
+.skip:focus{top:12px}
+section[id],article[id]{scroll-margin-top:calc(var(--hdr) + 16px)}
+.nw{white-space:nowrap}
+
+/* [CONFIRM] tag */
+.cf{display:inline-block;vertical-align:.35em;margin-left:.3em;font:600 11px/1 var(--body);letter-spacing:.02em;padding:3px 5px;border:1px dashed currentColor;border-radius:3px;opacity:.8;white-space:nowrap;text-transform:lowercase}
+h1 .cf,h2 .cf,h3 .cf{vertical-align:.9em}
+.cal .cf{opacity:1}
+
+/* Buttons: square-edged to match the stamp. Ochre = primary action only. */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;min-height:52px;padding:0 24px;border-radius:var(--r);font:600 var(--t-18)/1 var(--body);text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:background-color .15s,color .15s}
+.btn--accent{background:var(--accent);color:var(--ink)}
+.btn--accent:hover{background:#D49A3B}
+.btn--ink{background:var(--ink);color:var(--plaster)}
+.btn--ink:hover{background:#000}
+.btn--light{background:var(--plaster);color:var(--ink)}
+.btn--light:hover{background:#fff}
+.btn--line{border-color:currentColor;background:transparent}
+.btn--line:hover{background:rgba(27,26,23,.06)}
+.on-dark .btn--line:hover{background:rgba(255,255,255,.1)}
+
+/* ---------- Header ---------- */
+.hdr{position:absolute;inset:0 0 auto;z-index:30;color:#fff}
+.hdr__in{display:flex;align-items:center;gap:24px;max-width:1440px;margin:0 auto;padding:14px var(--gut)}
+.brand{display:flex;flex-direction:column;text-decoration:none;line-height:1}
+.brand__name{font-family:var(--display);font-size:26px;letter-spacing:0}
+.brand__line{font-size:13px;opacity:.86;margin-top:6px}
+.nav{margin-left:auto;display:flex;align-items:center;gap:26px}
+.nav a{text-decoration:none;font-weight:500;font-size:16px;padding:8px 0;border-bottom:1.5px solid transparent}
+.nav a:hover{border-bottom-color:currentColor}
+.hdr__call{display:flex;flex-direction:column;align-items:flex-end;text-decoration:none;font-size:14px;line-height:1.25}
+.hdr__call b{font-size:16px}
+.hdr .btn{min-height:44px;padding:0 18px;font-size:16px}
+.menu-btn{display:none;margin-left:auto;min-height:44px;min-width:44px;padding:0 16px;border-radius:var(--r);border:1.5px solid rgba(255,255,255,.8);background:rgba(0,0,0,.3);color:#fff;font:600 16px/1 var(--body);cursor:pointer}
+.mnav{display:none}
+@media (min-width:1100px){
+  :root{--hdr:73px}
+  .hdr{position:sticky;top:0;background:var(--plaster);color:var(--ink);border-bottom:1px solid var(--line)}
+  .hdr :focus-visible{outline-color:var(--ink)}
+}
+@media (max-width:1099px){
+  .nav,.hdr__call,.hdr .btn{display:none}
+  .brand__line{display:none}
+  .menu-btn{display:inline-flex;align-items:center}
+  .mnav{position:absolute;left:12px;right:12px;top:68px;background:var(--plaster);color:var(--ink);border-radius:6px;box-shadow:0 18px 50px rgba(0,0,0,.35);padding:8px}
+  .mnav.is-open{display:block}
+  .mnav a{display:block;padding:14px;text-decoration:none;font-size:var(--t-18);font-weight:500;border-radius:4px}
+  .mnav a:hover{background:rgba(27,26,23,.06)}
+  .mnav .btn{display:flex;margin:8px 6px 6px}
+  .mnav :focus-visible{outline-color:var(--ink)}
+}
+
+/* ---------- Hero: game photo + headline ---------- */
+.opener{position:relative;color:#fff;background:#141312;overflow:hidden;isolation:isolate}
+.opener__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:47% 42%;z-index:-2}
+.opener::before{content:"";position:absolute;inset:0;z-index:-1;background:
+  linear-gradient(180deg,rgba(10,10,9,.55) 0%,rgba(10,10,9,0) 20%),
+  linear-gradient(0deg,rgba(10,12,11,.88) 0%,rgba(10,12,11,.55) 40%,rgba(10,12,11,0) 72%)}
+.opener__game{position:relative;padding:clamp(226px,58vw,320px) var(--gut) 28px}
+.count{font-size:var(--t-15);font-weight:600;margin:0 0 .5em}
+.opener .count{text-shadow:0 1px 3px rgba(0,0,0,.8)}
+.opener__q{font-family:var(--game);font-size:46px;line-height:.98;letter-spacing:-.02em;margin:0 0 .2em;max-width:none}
+.opener__intro{font-size:var(--t-18);margin:0 0 16px;text-shadow:0 1px 3px rgba(0,0,0,.6)}
+
+/* answer block: buttons and result share one grid cell, so nothing below moves */
+.answer{display:grid;align-items:start}
+.answer>*{grid-area:1/1}
+.answer__btns{display:flex;gap:10px}
+.guess{flex:1 1 0;min-width:0;white-space:nowrap;min-height:54px;padding:0 14px;border-radius:var(--r);font:600 18px/1 var(--body);cursor:pointer;
+  background:transparent;color:var(--ink);border:1.5px solid var(--ink);transition:background-color .15s,color .15s}
+.guess:hover{background:var(--ink);color:var(--plaster)}
+.opener .guess{color:#fff;border-color:rgba(255,255,255,.9);background:rgba(10,10,9,.35)}
+.opener .guess:hover{background:#fff;color:var(--ink)}
+.answer__result{visibility:hidden}
+.is-answered .answer__btns{visibility:hidden}
+.is-answered .answer__result{visibility:visible}
+.verdict{font-size:var(--t-18);line-height:1.5;margin:0 0 .35em;text-wrap:pretty}
+.verdict strong{font-family:var(--game);font-weight:400;font-size:1.2em;margin-right:.15em}
+.you{font-size:var(--t-15);margin:0;opacity:.92}
+.next{font-weight:700;white-space:nowrap;display:inline-block;padding:4px 2px;margin:-4px -2px;text-underline-offset:3px}
+.opener .answer{min-height:112px}
+
+/* the stamp + the finish label strip (appear on answer) */
+.stamp{position:absolute;z-index:3;pointer-events:none;font-family:var(--game);color:var(--stamp);background:rgba(242,240,235,.94);
+  border:3px solid var(--stamp);outline:1.5px solid var(--stamp);outline-offset:-9px;border-radius:5px;padding:.32em .62em .36em;line-height:1;
+  font-size:clamp(28px,3.6vw,52px);transform:rotate(-7deg);opacity:0;white-space:nowrap;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.stamp--long{font-size:clamp(22px,2.6vw,38px)}
+.is-answered .stamp{opacity:1;animation:press .34s cubic-bezier(.2,.9,.25,1.25) both}
+@keyframes press{0%{opacity:0;transform:rotate(-13deg) scale(1.55)}55%{opacity:1;transform:rotate(-6deg) scale(.95)}100%{opacity:1;transform:rotate(-7deg) scale(1)}}
+@media (prefers-reduced-motion:reduce){.is-answered .stamp{animation:none}.guess{transition:none}}
+.label{position:absolute;z-index:2;left:0;bottom:0;visibility:hidden;background:var(--plaster);color:var(--ink);font:600 14px/1.3 var(--body);padding:9px 14px 10px;border-top-right-radius:var(--r)}
+.is-answered .label{visibility:visible}
+.opener .stamp{top:150px;right:16px}
+.opener .label{top:72px;bottom:auto;left:var(--gut);border-radius:var(--r)}
+
+.lede{padding:28px 0 clamp(40px,6vw,72px)}
+.lede h1{font-size:clamp(40px,4.4vw,66px);line-height:1.02;margin-bottom:20px;max-width:14ch}
+.lede__sub{font-size:var(--t-18);line-height:1.6;margin-bottom:22px}
+.lede__btns{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+.cal{position:relative;font-size:var(--t-15);color:var(--muted);margin:0;padding-left:18px}
+.cal::before{content:"";position:absolute;left:0;top:.55em;width:8px;height:8px;border-radius:50%;background:var(--ink)}
+
+@media (min-width:1100px){
+  .hero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);height:min(calc(100svh - var(--hdr)),900px);min-height:640px}
+  .lede{order:-1;display:flex;align-items:center;padding:40px clamp(32px,4vw,64px) 40px max(var(--gut),calc((100vw - 1440px)/2 + var(--gut)))}
+  .lede .wrap{padding:0;margin:0}
+  .lede__sub{font-size:19px}
+  .opener{height:100%}
+  .opener__img{object-position:49% 40%}
+  .opener__game{position:absolute;left:0;right:0;bottom:0;padding:0 clamp(28px,3vw,48px) clamp(26px,4vh,44px)}
+  .opener__q{font-size:clamp(56px,5vw,78px)}
+  .opener .answer{min-height:104px;max-width:640px}
+  .opener .answer__btns{max-width:420px}
+  .opener .stamp{top:20%;right:9%}
+  .opener .label{top:24px;left:clamp(28px,3vw,48px)}
+}
+@media (min-width:600px) and (max-width:1099px){
+  .opener__game{padding-top:360px}
+  .opener .answer__btns{max-width:460px}
+  .opener__q{font-size:64px}
+}
+
+/* ---------- Proof ---------- */
+.proof{padding:0 0 clamp(48px,7vw,104px)}
+.proof__list{list-style:none;margin:0;padding:clamp(24px,3.5vw,48px) 0 0;border-top:1px solid var(--line);font-family:var(--display);font-size:clamp(26px,3.2vw,44px);line-height:1.2;text-wrap:balance}
+.proof__list li{display:inline}
+.proof__list li+li::before{content:"";display:inline-block;width:.22em;height:.22em;border-radius:50%;background:var(--ink);margin:0 .5em;vertical-align:.22em}
+
+/* ---------- Touch test, rounds 2–6 ---------- */
+.tt-sec{padding:0 0 clamp(40px,6vw,88px)}
+.tt-head{margin-bottom:clamp(20px,3vw,36px)}
+.tt-head h2{font-size:var(--t-76)}
+.tt-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:clamp(20px,2.4vw,32px);align-items:start}
+.tt{grid-column:span 2;min-width:0}
+.tt--wide{grid-column:span 3}
+.tt__photo{position:relative;margin:0 0 16px;overflow:hidden;background:#d9d5cc;aspect-ratio:4/5}
+.tt--wide .tt__photo{aspect-ratio:3/2}
+.tt__photo img{width:100%;height:100%;object-fit:cover;transform:scale(var(--z,1));transform-origin:var(--ox,50%) var(--oy,50%)}
+.tt__photo .stamp{left:16px;top:18px}
+.tt__q{font-family:var(--body);font-weight:600;font-size:var(--t-15);line-height:1.4;color:var(--muted);margin:0 0 12px;letter-spacing:0}
+.tt__q b{display:block;font-family:var(--display);font-weight:400;font-size:var(--t-32);line-height:1.1;color:var(--ink);margin-top:4px}
+.tt .answer{min-height:150px}
+.tt .verdict strong{font-size:1.15em}
+.tt .you{color:var(--muted);opacity:1}
+
+/* score */
+.score{background:var(--green);color:var(--plaster)}
+.score__in{display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(20px,5vw,72px);align-items:center;padding-top:clamp(36px,5vw,72px);padding-bottom:clamp(36px,5vw,72px)}
+.score__in p{margin:0}
+.score__big{font-family:var(--display);font-size:clamp(76px,11vw,160px);line-height:.9;color:var(--accent);white-space:nowrap}
+.score__big small{font-size:.38em;color:var(--ochre-plaster)}
+.score__msg{font-family:var(--display);font-size:var(--t-32);line-height:1.2;margin-bottom:.4em!important}
+.score__msg:empty{display:none}
+.score__line{font-size:var(--t-22);color:var(--ochre-plaster)}
+
+/* ---------- Finishes ---------- */
+.fin-sec{padding:clamp(56px,8vw,128px) 0}
+.fin-head{margin-bottom:clamp(24px,3.5vw,48px)}
+.fin-head h2{font-size:var(--t-76)}
+.fin-head p{color:var(--muted);font-size:var(--t-22);margin:.5em 0 0}
+.fin-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(24px,5vw,80px)}
+.fin{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.fin__item{border-bottom:1px solid var(--line);padding:18px 0 20px}
+.fin__item h3{font-size:inherit}
+.fin__name{all:unset;display:block;cursor:pointer;font-family:var(--display);font-size:clamp(30px,3.3vw,44px);line-height:1.08;color:var(--ink-70);text-wrap:balance;border-radius:2px;transition:color .15s}
+.fin__name:focus-visible{outline:3px solid var(--ink);outline-offset:4px}
+.fin__item.is-active .fin__name,.fin__name:hover{color:var(--ink)}
+.fin__item.is-active .fin__name::after{content:"";display:inline-block;width:.32em;height:.32em;margin-left:.3em;border-radius:50%;background:var(--ink);vertical-align:.15em}
+.fin__desc{margin:.5em 0 0;color:var(--muted)}
+.fin__item.is-active .fin__desc{color:var(--ink)}
+.fin-panel{position:sticky;top:calc(var(--hdr) + 24px);align-self:start;margin:0}
+.fin-panel__frame{position:relative;aspect-ratio:4/5;overflow:hidden;background:#d9d5cc}
+.fin-panel__frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s ease;transform:scale(var(--z,1));transform-origin:var(--ox,50%) var(--oy,50%)}
+.fin-panel__frame img.is-on{opacity:1}
+@media (prefers-reduced-motion:reduce){.fin-panel__frame img{transition:none}}
+.fin-panel__name,.fin-panel__desc{display:none}
+.fin-panel figcaption{font-size:var(--t-15);color:var(--muted);margin-top:10px}
+.aka{margin:clamp(24px,3.5vw,44px) 0 0;font-size:var(--t-15);color:var(--muted)}
+
+/* ---------- Recent rooms ---------- */
+.work{background:var(--ink);color:var(--plaster);padding:clamp(56px,8vw,112px) 0}
+.work__head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:24px}
+.work__head h2{font-size:var(--t-76)}
+.soon{font-weight:600;color:var(--ochre-plaster)}
+.rooms{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:clamp(170px,17vw,260px);gap:6px}
+.room{position:relative;overflow:hidden;background:#2a2926}
+.room figure{margin:0;height:100%}
+.room img{width:100%;height:100%;object-fit:cover}
+.room figcaption{position:absolute;left:0;right:0;bottom:0;padding:44px 14px 12px;font-size:var(--t-15);line-height:1.4;background:linear-gradient(0deg,rgba(10,10,9,.85),rgba(10,10,9,0))}
+.room figcaption b{font-weight:600}
+.room--tall{grid-row:span 2}
+.room--wide{grid-column:span 2}
+.room--big{grid-column:span 2;grid-row:span 2}
+
+/* ---------- How it works ---------- */
+.how{background:var(--ochre-plaster);padding:clamp(56px,8vw,128px) 0}
+.how__top{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,5vw,80px)}
+.how h2{font-size:var(--t-76);max-width:12ch;margin-bottom:22px}
+.how__intro{font-size:var(--t-22);line-height:1.5}
+.how__photo{margin:28px 0 0}
+.how__photo img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 35%}
+.steps{list-style:none;margin:0;padding:0;counter-reset:s}
+.steps li{display:grid;grid-template-columns:clamp(54px,6vw,96px) minmax(0,1fr);gap:6px 18px;padding:20px 0;border-bottom:1px solid rgba(27,26,23,.18);counter-increment:s}
+.steps li:first-child{padding-top:0}
+.steps li::before{content:counter(s);font-family:var(--display);font-size:clamp(44px,5vw,72px);line-height:.9;color:var(--green)}
+.steps h3{font-size:var(--t-32);margin:2px 0 6px}
+.steps p{margin:0}
+.how__bottom{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,5vw,80px);margin-top:clamp(36px,5vw,72px)}
+.price{background:var(--plaster);padding:24px 26px 22px;border-radius:var(--r)}
+.price h3,.homework h3{font:700 var(--t-22)/1.3 var(--body);margin:0 0 10px}
+.price ul{margin:0 0 12px;padding:0;list-style:none}
+.price li{padding:6px 0;border-bottom:1px dashed rgba(27,26,23,.22)}
+.price p{margin:0;color:var(--muted)}
+.homework ul,.ty ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.homework li,.ty li{position:relative;padding-left:34px}
+.homework li::before,.ty li::before{content:"";position:absolute;left:0;top:.28em;width:20px;height:20px;border:2px solid var(--green);border-radius:3px}
+
+/* ---------- Designers & builders: spec sheet ---------- */
+.des{background:var(--green);color:var(--plaster);padding:clamp(56px,8vw,120px) 0}
+.des__grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,5vw,88px);align-items:start}
+.des h2{font-size:var(--t-76);margin-bottom:22px}
+.des__lead{font-size:var(--t-18);line-height:1.6;margin-bottom:28px}
+.sheet{border-top:2px solid var(--plaster);margin:0}
+.sheet__head{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--line-dark);font-size:var(--t-15);font-weight:600;color:var(--ochre-plaster)}
+.sheet__row{display:grid;grid-template-columns:minmax(110px,2fr) minmax(0,7fr);gap:8px 24px;padding:16px 0;border-bottom:1px solid var(--line-dark)}
+.sheet dt{font-weight:600;color:var(--ochre-plaster);font-size:var(--t-15);padding-top:2px}
+.sheet dd{margin:0}
+
+/* ---------- About ---------- */
+.about{padding:clamp(56px,8vw,128px) 0 clamp(40px,5vw,80px)}
+.about h2{font-size:var(--t-120);line-height:.98;max-width:13ch;margin-bottom:clamp(28px,4.5vw,56px)}
+.about__grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(24px,5vw,80px);align-items:start}
+.about__photo{margin:0}
+.about__photo img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.about__photo figcaption{font-size:var(--t-15);color:var(--muted);margin-top:10px}
+.book{margin:26px 0;padding:22px 0 20px;border-top:3px solid var(--ink);border-bottom:1px solid var(--line)}
+.book__k{font-size:var(--t-15);color:var(--muted);margin:0 0 6px}
+.book__t{font-family:var(--display-it);font-style:italic;font-size:var(--t-32);line-height:1.15;margin:0 0 6px}
+.book__m{margin:0;color:var(--muted);font-size:var(--t-15)}
+.quote{margin:0;font-family:var(--display);font-size:var(--t-32);line-height:1.22;color:var(--green)}
+.quote cite{display:block;font:500 var(--t-15)/1.4 var(--body);color:var(--muted);margin-top:12px;font-style:normal}
+.beam{margin:clamp(36px,5vw,72px) 0 0}
+.beam img{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:50% 30%}
+
+/* ---------- Partners ---------- */
+.partners{padding:0 0 clamp(56px,8vw,112px)}
+.partners__grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(20px,5vw,80px);padding-top:clamp(28px,4vw,48px);border-top:1px solid var(--line)}
+.partners h2{font-size:var(--t-32)}
+.ph{margin:0 0 18px;padding:16px 18px;border:1.5px dashed rgba(27,26,23,.3);border-radius:var(--r)}
+.ph p{font-family:var(--display);font-size:var(--t-22);line-height:1.35;color:var(--muted);margin:0 0 6px}
+.ph footer{font-size:var(--t-15);font-weight:600}
+
+/* ---------- In your home ---------- */
+.home{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);background:#E9E5DD}
+.home__photo{margin:0}
+.home__photo img{width:100%;height:100%;min-height:420px;object-fit:cover;object-position:35% 60%}
+.home__body{padding:clamp(44px,7vw,104px) var(--gut);max-width:680px;align-self:center}
+.home h2{font-size:var(--t-48);margin-bottom:22px}
+.home ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.home li{font-size:var(--t-22);line-height:1.45;padding:14px 0;border-bottom:1px solid var(--line)}
+
+/* ---------- Form ---------- */
+.contact{padding:clamp(56px,8vw,128px) 0}
+.contact__grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(24px,5vw,80px);align-items:start}
+.contact__side{position:sticky;top:calc(var(--hdr) + 24px)}
+.contact h2{font-size:var(--t-48);margin-bottom:18px}
+.contact__intro{font-size:var(--t-22);line-height:1.5}
+.contact__call{display:inline-flex;flex-direction:column;margin-top:4px;text-decoration:none;font-size:var(--t-15);color:var(--muted)}
+.contact__call b{font-family:var(--display);font-weight:400;font-size:var(--t-32);color:var(--ink)}
+.form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 20px}
+.f{display:flex;flex-direction:column;gap:8px;min-width:0}
+.f--full{grid-column:1/-1}
+.f label,.f legend{font-weight:600;font-size:16px}
+.req{color:var(--stamp);font-weight:600}
+.opt{color:var(--muted);font-weight:400}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend{padding:0;margin-bottom:10px}
+input[type=text],input[type=tel],input[type=email],textarea,select{font:400 var(--t-18)/1.4 var(--body);color:var(--ink);background:#fff;border:1.5px solid #8C867B;border-radius:var(--r);padding:12px 14px;min-height:52px;width:100%}
+textarea{min-height:110px;resize:vertical}
+input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--ink);outline-offset:1px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;width:100%;height:100%;margin:0;cursor:pointer}
+.chip span{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1.5px solid #8C867B;border-radius:var(--r);background:#fff;font-size:16px;font-weight:500}
+.chip input:checked+span{background:var(--green);border-color:var(--green);color:var(--plaster)}
+.chip input:focus-visible+span{outline:3px solid var(--ink);outline-offset:2px}
+.err{color:var(--stamp);font-size:var(--t-15);font-weight:600;margin:0}
+.err:empty{display:none}
+[aria-invalid=true]{border-color:var(--stamp)!important;box-shadow:0 0 0 1px var(--stamp)}
+.fieldset-invalid .chip span{border-color:var(--stamp)}
+.file{border:1.5px dashed #8C867B;border-radius:var(--r);padding:14px 16px;background:#fff}
+.file input{font:inherit;font-size:16px;max-width:100%;color:var(--muted)}
+.file input::file-selector-button{font:600 16px/1 var(--body);color:var(--plaster);background:var(--green);border:0;border-radius:var(--r);padding:13px 18px;margin-right:14px;cursor:pointer}
+.file__list{font-size:var(--t-15);color:var(--muted);margin:8px 0 0}
+.submit{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px}
+.submit .btn{min-width:220px}
+.submit p{margin:0;color:var(--muted);font-size:var(--t-15)}
+.ty{background:var(--green);color:var(--plaster);padding:clamp(26px,4vw,48px);border-radius:var(--r)}
+.ty h3{font-size:var(--t-48);margin-bottom:18px}
+.ty__k{font-weight:700;font-size:var(--t-22);margin:0 0 14px}
+.ty li::before{border-color:var(--plaster)}
+
+/* ---------- Footer ---------- */
+.foot{background:var(--green-deep);color:var(--ochre-plaster);padding:44px 0 52px;font-size:var(--t-15)}
+.foot__in{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:baseline}
+.foot__name{font-family:var(--display);font-size:var(--t-32);color:var(--plaster);margin-right:12px}
+.foot a{color:var(--plaster)}
+
+/* ---------- Sticky contact bar (phones, tablets, small laptops) ---------- */
+.pbar{display:none}
+@media (max-width:1099px){
+  :root{--bar:calc(78px + env(safe-area-inset-bottom))}
+  .pbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:50;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--plaster);border-top:1px solid rgba(27,26,23,.22)}
+  .pbar .btn{min-height:52px;padding:0 12px;font-size:17px}
+}
+
+/* ---------- Tablet + phone ---------- */
+@media (max-width:899px){
+  .lede h1{max-width:none}
+  .proof__list li{display:block;padding:7px 0 7px 18px;position:relative;font-size:24px;line-height:1.22}
+  .proof__list li+li::before{display:none}
+  .proof__list li::after{content:"";position:absolute;left:0;top:.72em;width:7px;height:7px;border-radius:50%;background:var(--ink)}
+  /* rounds 2–6 become a swipe deck */
+  .tt-grid{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 calc(-1 * var(--gut));padding:0 var(--gut) 6px;scroll-padding:0 var(--gut);overscroll-behavior-x:contain}
+  .tt,.tt--wide{flex:0 0 86%;scroll-snap-align:start}
+  .tt__photo,.tt--wide .tt__photo{aspect-ratio:1/1}
+  .tt .answer{min-height:160px}
+  .score__in{grid-template-columns:minmax(0,1fr);gap:8px}
+  .score__big{font-size:76px}
+  /* finishes become a segmented control */
+  .fin-grid{grid-template-columns:minmax(0,1fr);gap:16px}
+  .fin{display:flex;flex-wrap:wrap;gap:8px;border:0}
+  .fin__item{border:0;padding:0}
+  .fin__name{font:600 15px/1.2 var(--body);color:var(--ink);padding:12px 14px;min-height:44px;box-sizing:border-box;border:1.5px solid #8C867B;border-radius:var(--r);background:#fff;display:flex;align-items:center}
+  .fin__item.is-active .fin__name{background:var(--ink);border-color:var(--ink);color:var(--plaster)}
+  .fin__item.is-active .fin__name::after{display:none}
+  .fin__desc{display:none}
+  .fin-panel{position:static}
+  .fin-panel__frame{aspect-ratio:4/3}
+  .fin-panel__name{display:block;font-family:var(--display);font-size:30px;line-height:1.1;margin:16px 0 8px}
+  .fin-panel__desc{display:block;margin:0 0 6px}
+  .rooms{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:40vw;grid-auto-flow:dense}
+  .room--wide{grid-column:span 1}
+  .room--big{grid-column:span 2;grid-row:span 1}
+  .room--tall{grid-row:span 2}
+  .room figcaption{padding:32px 10px 9px;font-size:14px}
+  .lede__grid,.how__top,.how__bottom,.about__grid,.partners__grid,.contact__grid,.des__grid{grid-template-columns:minmax(0,1fr)}
+  .how__photo img{aspect-ratio:16/9}
+  .home{grid-template-columns:minmax(0,1fr)}
+  .home__photo img{min-height:0;aspect-ratio:16/9;height:auto}
+  .form{grid-template-columns:minmax(0,1fr);gap:18px}
+  .contact__side{position:static}
+  .work__head{flex-direction:column;align-items:start;gap:6px}
+  .sheet__row{grid-template-columns:minmax(0,1fr);gap:2px}
+  .beam,.how__photo,.room--phone-hide{display:none}
+  .fin-sec,.how,.des,.about,.contact,.work{padding-top:48px;padding-bottom:48px}
+  .about h2{margin-bottom:24px}
+  .partners{padding-bottom:48px}
+  textarea{min-height:88px}
+  .fin__dot{display:none}
+  .ph{padding:12px 14px;margin-bottom:12px}
+  .ph p{font-size:18px}
+  .steps li{padding:14px 0;grid-template-columns:44px minmax(0,1fr)}
+  .steps li::before{font-size:40px}
+  .form{gap:14px}
+  .about__photo img{aspect-ratio:16/10}
+  .lede{padding-bottom:32px}
+  .proof{padding-bottom:40px}
+  .tt-sec{padding-bottom:32px}
+  .home__body{padding-top:36px;padding-bottom:40px}
+}
+@media (min-width:600px) and (max-width:899px){
+  .tt,.tt--wide{flex-basis:60%}
+  .rooms{grid-auto-rows:30vw}
+  .about__grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .fin-panel__frame{aspect-ratio:16/9}
+}
+.hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden}
+.file__hint{font-size:.85rem;opacity:.75;margin:.35rem 0 0}
 </style>
 </head>
-<body><main><h1>Liquid Tapestries</h1><p>— Decorative painting, murals &amp; custom finishes · Indianapolis · New website coming soon.</p></main></body>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="hdr on-dark">
+  <div class="hdr__in">
+    <a class="brand" href="#top" aria-label="Liquid Tapestries, home">
+      <span class="brand__name">Liquid Tapestries</span>
+      <span class="brand__line">Decorative finishes · Indianapolis</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#work">The Work</a>
+      <a href="#finishes">Finishes</a>
+      <a href="#how">How it works</a>
+      <a href="#designers">For designers &amp; builders</a>
+      <a href="#about">About Dave</a>
+    </nav>
+    <a class="hdr__call" href="tel:+13172014953"><span>Call Dave</span><b class="nw">(317) 201-4953</b></a>
+    <a class="btn btn--accent" href="#contact">Start a project</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mnav">Menu</button>
+  </div>
+  <nav class="mnav" id="mnav" aria-label="Main (mobile)">
+    <a href="#work">The Work</a>
+    <a href="#finishes">Finishes</a>
+    <a href="#how">How it works</a>
+    <a href="#designers">For designers &amp; builders</a>
+    <a href="#about">About Dave</a>
+    <a class="btn btn--accent" href="#contact">Start a project</a>
+  </nav>
+</header>
+
+<main id="main">
+<div class="hero" id="top">
+  <!-- Guess 1 of 6, over the photo -->
+  <section class="opener on-dark" aria-label="Guess 1 of 6">
+    <img class="opener__img" src="assets/marble-black-backsplash-painted-outlet.jpg" width="1800" height="1350" fetchpriority="high"
+      alt="Close-up of a black marble backsplash with wavy grey and white veins and a dark outlet cover set into it, above a matching marble countertop.">
+    <div class="game opener__game" data-correct="painted">
+      <p class="count">Guess 1 of 6</p>
+      <p class="opener__q" id="q1">Real, or painted?</p>
+      <p class="opener__intro">Most people guess wrong. Make your guess.</p>
+      <div class="answer">
+        <div class="answer__btns" role="group" aria-labelledby="q1">
+          <button class="guess" type="button" data-guess="real">Real</button>
+          <button class="guess" type="button" data-guess="painted">Painted</button>
+        </div>
+        <div class="answer__result">
+          <p class="verdict"><strong>Painted.</strong> Even the outlet cover. Look closely: the veins run right across it.</p>
+          <p class="you"><span data-you></span> <a class="next" href="#t2">Five more to go</a></p>
+        </div>
+      </div>
+    </div>
+    <span class="stamp" aria-hidden="true">Painted.</span>
+    <span class="label">Hand-painted black marble · backsplash</span>
+  </section>
+
+  <!-- Hero copy -->
+  <section class="lede" aria-labelledby="h1">
+    <div class="wrap">
+      <h1 id="h1">Walls people touch to see if they’re real.</h1>
+      <p class="lede__sub">Venetian plaster, hand-painted marble, wood graining, murals and sculpted stone, made by Dave Schmidt and his crew of three for Indianapolis-area homes since <span class="nw">1985 <span class="cf" title="Confirm the year">confirm</span>.</span></p>
+      <div class="lede__btns">
+        <a class="btn btn--accent" href="#contact">Start a project</a>
+        <a class="btn btn--line" href="#designers">For designers &amp; builders</a>
+      </div>
+      <p class="cal">Most projects book months ahead. Now scheduling spring <span class="nw">2027 <span class="cf" title="Confirm the season">confirm</span>.</span></p>
+    </div>
+  </section>
+</div>
+
+<!-- 2. Proof -->
+<section class="proof" aria-label="Proof">
+  <div class="wrap">
+    <ul class="proof__list">
+      <li>Co-author of <em>Marvelous Murals You Can Paint</em> (North Light Books)</li>
+      <li>40 years of decorative <span class="nw">painting <span class="cf" title="Confirm">confirm</span></span></li>
+      <li>Indianapolis <span class="nw">Home-a-Rama</span> and designer dream homes</li>
+      <li>Homes for professional football and basketball players</li>
+      <li>Featured in <em>Cowboys &amp; Indians</em></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 3. The touch test, rounds 2–6 -->
+<section class="tt-sec" id="touch-test" aria-labelledby="tt-h">
+  <div class="wrap">
+    <div class="tt-head"><h2 id="tt-h">Real, or painted?</h2></div>
+    <div class="tt-grid">
+
+      <article class="tt game" id="t2" data-correct="painted" aria-labelledby="q2">
+        <figure class="tt__photo">
+          <img src="assets/marble-onyx-feature-wall.jpg" width="1152" height="1536" loading="lazy" style="object-position:45% 38%;--z:1.42;--ox:44%;--oy:36%"
+            alt="A floor-to-ceiling wall that looks like pale grey onyx, with white veins sweeping across it.">
+          <span class="stamp" aria-hidden="true">Painted.</span>
+          <span class="label">Hand-painted onyx · feature wall</span>
+        </figure>
+        <h3 class="tt__q" id="q2">Guess 2 of 6</h3>
+        <div class="answer">
+          <div class="answer__btns" role="group" aria-label="Guess 2: real, or painted?">
+            <button class="guess" type="button" data-guess="real">Real</button>
+            <button class="guess" type="button" data-guess="painted">Painted</button>
+          </div>
+          <div class="answer__result">
+            <p class="verdict"><strong>Painted.</strong> A floor-to-ceiling onyx wall, every vein laid in by hand.</p>
+            <p class="you"><span data-you></span> <a class="next" href="#t3">Next one</a></p>
+          </div>
+        </div>
+      </article>
+
+      <article class="tt game" id="t3" data-correct="painted" aria-labelledby="q3">
+        <figure class="tt__photo">
+          <img src="assets/woodgrain-arched-walnut-doors.jpg" width="1152" height="1536" loading="lazy" style="object-position:50% 25%;--z:1.2;--ox:50%;--oy:18%"
+            alt="Tall arched double doors with the warm, streaky grain of walnut, set in a white archway.">
+          <span class="stamp" aria-hidden="true">Painted.</span>
+          <span class="label">Wood graining · walnut-look doors</span>
+        </figure>
+        <h3 class="tt__q" id="q3">Guess 3 of 6</h3>
+        <div class="answer">
+          <div class="answer__btns" role="group" aria-label="Guess 3: real, or painted?">
+            <button class="guess" type="button" data-guess="real">Real</button>
+            <button class="guess" type="button" data-guess="painted">Painted</button>
+          </div>
+          <div class="answer__result">
+            <p class="verdict"><strong>Painted.</strong> These “walnut” doors are wood-grained by hand.</p>
+            <p class="you"><span data-you></span> <a class="next" href="#t4">Next one</a></p>
+          </div>
+        </div>
+      </article>
+
+      <article class="tt game" id="t4" data-correct="painted" aria-labelledby="q4">
+        <figure class="tt__photo">
+          <img src="assets/metallic-rusted-iron-beam-detail.jpg" width="1800" height="1350" loading="lazy" style="object-position:45% 45%;--z:1.18;--ox:45%;--oy:42%"
+            alt="A heavy riveted iron beam, crusted with orange rust and blue-green verdigris.">
+          <span class="stamp" aria-hidden="true">Painted.</span>
+          <span class="label">Painted rust and verdigris · beam</span>
+        </figure>
+        <h3 class="tt__q" id="q4">Guess 4 of 6</h3>
+        <div class="answer">
+          <div class="answer__btns" role="group" aria-label="Guess 4: real, or painted?">
+            <button class="guess" type="button" data-guess="real">Real</button>
+            <button class="guess" type="button" data-guess="painted">Painted</button>
+          </div>
+          <div class="answer__result">
+            <p class="verdict"><strong>Painted.</strong> No iron here. Rust, rivets and verdigris, all paint.</p>
+            <p class="you"><span data-you></span> <a class="next" href="#t5">Next one</a></p>
+          </div>
+        </div>
+      </article>
+
+      <article class="tt tt--wide game" id="t5" data-correct="sculpted" aria-labelledby="q5">
+        <figure class="tt__photo">
+          <img src="assets/stone-lost-run-wine-cellar.jpg" width="1536" height="2304" loading="lazy" style="object-position:50% 40%"
+            alt="A wine cellar with rough, weathered stone columns and shelves holding terracotta pipes full of wine bottles.">
+          <span class="stamp" aria-hidden="true">Sculpted.</span>
+          <span class="label">Sculpted stone · wine cellar</span>
+        </figure>
+        <h3 class="tt__q" id="q5">Guess 5 of 6 <b>Real stone, or hand-sculpted?</b></h3>
+        <div class="answer">
+          <div class="answer__btns" role="group" aria-labelledby="q5">
+            <button class="guess" type="button" data-guess="real">Real stone</button>
+            <button class="guess" type="button" data-guess="sculpted">Hand-sculpted</button>
+          </div>
+          <div class="answer__result">
+            <p class="verdict"><strong>Sculpted.</strong> Hand-carved stone columns and shelving in the Lost Run Farm wine cellar, featured in <em>Cowboys &amp; Indians</em>.</p>
+            <p class="you"><span data-you></span> <a class="next" href="#t6">Last one</a></p>
+          </div>
+        </div>
+      </article>
+
+      <article class="tt tt--wide game" id="t6" data-correct="hand" aria-labelledby="q6">
+        <figure class="tt__photo">
+          <img src="assets/metallic-zinc-hood-copper-rivets.jpg" width="1800" height="1484" loading="lazy" style="object-position:50% 50%"
+            alt="A flared range hood with silvery zinc panels framed by copper bands and rows of rivets.">
+          <span class="stamp stamp--long" aria-hidden="true">Finished by hand.</span>
+          <span class="label">Zinc-and-copper look · range hood</span>
+        </figure>
+        <h3 class="tt__q" id="q6">Guess 6 of 6 <b>Real zinc, or finished by hand?</b></h3>
+        <div class="answer">
+          <div class="answer__btns" role="group" aria-labelledby="q6">
+            <button class="guess" type="button" data-guess="real">Real zinc</button>
+            <button class="guess" type="button" data-guess="hand">Finished by hand</button>
+          </div>
+          <div class="answer__result">
+            <p class="verdict"><strong>Finished by hand.</strong> A zinc-and-copper look on a range <span class="nw">hood. <span class="cf" title="Confirm base material">confirm</span></span></p>
+            <p class="you"><span data-you></span> <a class="next" href="#score">See your score</a></p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="score on-dark" id="score" aria-label="Your score" tabindex="-1">
+  <div class="wrap score__in">
+    <p class="score__big" aria-hidden="true"><span data-score-num>–</span><small> of 6</small></p>
+    <div>
+      <p class="score__msg" data-score-msg></p>
+      <p class="score__line">That’s the point. Your guests will touch it, too.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 4. Finishes: plaster first -->
+<section class="fin-sec" id="finishes" aria-labelledby="fin-h">
+  <div class="wrap">
+    <div class="fin-head">
+      <h2 id="fin-h">What we make</h2>
+      <p>No two jobs are alike. These are the finishes we’re asked for most.</p>
+    </div>
+    <div class="fin-grid">
+      <ul class="fin">
+        <li class="fin__item is-active" data-cap="Shown: silver plaster fireplace wall, two-story great room">
+          <h3><button class="fin__name" type="button" aria-controls="fin-panel" aria-pressed="true">Venetian plaster, Marmorino and Roman clay<span class="fin__dot">.</span></button></h3>
+          <p class="fin__desc">Polished or matte mineral plaster, built up by hand in thin layers until the wall has depth you can see into. Our most-requested finish right now.</p>
+        </li>
+        <li class="fin__item" data-cap="Shown: hand-painted onyx feature wall">
+          <h3><button class="fin__name" type="button" aria-controls="fin-panel" aria-pressed="false">Hand-painted marble and stone<span class="fin__dot">.</span></button></h3>
+          <p class="fin__desc">Onyx, Carrara, Calacatta and black marble, painted where real stone is too heavy, too costly or simply won’t fit.</p>
+        </li>
+        <li class="fin__item" data-cap="Shown: wood-grained beams and loft stairs">
+          <h3><button class="fin__name" type="button" aria-controls="fin-panel" aria-pressed="false">Wood graining and beams<span class="fin__dot">.</span></button></h3>
+          <p class="fin__desc">Walnut, oak and weathered barnwood, painted onto doors, trim, cabinets and beams so new work matches old.</p>
+        </li>
+        <li class="fin__item" data-cap="Shown: beach mural with a pelican on a weathered post">
+          <h3><button class="fin__name" type="button" aria-controls="fin-panel" aria-pressed="false">Murals and painted ceilings<span class="fin__dot">.</span></button></h3>
+          <p class="fin__desc">Safari rooms, beach scenes, old-world skies, a flower-wreath dome, a wall that says BELIEVE. If you can picture it, we can paint it.</p>
+        </li>
+        <li class="fin__item" data-cap="Shown: gold leaf ceiling with fretwork band">
+          <h3><button class="fin__name" type="button" aria-controls="fin-panel" aria-pressed="false">Metallics and leaf<span class="fin__dot">.</span></button></h3>
+          <p class="fin__desc">Gold and silver leaf ceilings, bronze plaster walls, copper and zinc hoods, rusted iron.</p>
+        </li>
+        <li class="fin__item" data-cap="Shown: herringbone brick vault">
+          <h3><button class="fin__name" type="button" aria-controls="fin-panel" aria-pressed="false">Old-world rooms<span class="fin__dot">.</span></button></h3>
+          <p class="fin__desc">Brick vaults, crumbling plaster, stone arches: kitchens, cellars, bars and restaurants that feel a hundred years old on day one.</p>
+        </li>
+        <li class="fin__item" data-cap="Shown: sculpted fieldstone fireplace wall">
+          <h3><button class="fin__name" type="button" aria-controls="fin-panel" aria-pressed="false">Sculpted stone, by special arrangement<span class="fin__dot">.</span></button></h3>
+          <p class="fin__desc">Carved concrete walls, wine cellars and grottos for a few projects a year.</p>
+        </li>
+      </ul>
+      <figure class="fin-panel" id="fin-panel" aria-live="polite">
+        <div class="fin-panel__frame">
+          <img class="is-on" src="assets/plaster-silver-fireplace-tall.jpg" width="1152" height="1536" loading="lazy" style="object-position:45% 28%" alt="A two-story fireplace wall in soft silver plaster with cloudy, layered movement.">
+          <img src="assets/marble-onyx-feature-wall.jpg" width="1152" height="1536" loading="lazy" style="object-position:44% 36%;--z:1.42;--ox:44%;--oy:36%" alt="A floor-to-ceiling wall hand-painted to look like grey and white onyx.">
+          <img src="assets/woodgrain-loft-stairs-beams.jpg" width="1800" height="1350" loading="lazy" style="object-position:40% 45%" alt="A loft with ceiling beams and a staircase painted to look like weathered grey barnwood.">
+          <img src="assets/mural-pelican-beach.jpg" width="1152" height="1536" loading="lazy" style="object-position:40% 28%" alt="A painted beach mural: a pelican on a weathered post in front of green hills and blue water.">
+          <img src="assets/ceiling-gold-leaf-fretwork.jpg" width="1800" height="1350" loading="lazy" style="object-position:55% 40%" alt="A round ceiling in warm gold leaf, ringed by an ornate gold fretwork band.">
+          <img src="assets/ceiling-herringbone-brick-vault.jpg" width="1152" height="1536" loading="lazy" style="object-position:50% 20%" alt="A vaulted ceiling of herringbone brick with a chandelier, over stone arches.">
+          <img src="assets/stone-fieldstone-fireplace.jpg" width="1800" height="1350" loading="lazy" style="object-position:35% 45%" alt="A wide fireplace wall of sculpted fieldstone in warm tan and grey.">
+        </div>
+        <p class="fin-panel__name" data-fin-name>Venetian plaster, Marmorino and Roman clay.</p>
+        <p class="fin-panel__desc" data-fin-desc>Polished or matte mineral plaster, built up by hand in thin layers until the wall has depth you can see into. Our most-requested finish right now.</p>
+        <figcaption data-fin-cap>Shown: silver plaster fireplace wall, two-story great room</figcaption>
+      </figure>
+    </div>
+    <p class="aka">Also known as faux finishes, decorative painting and specialty finishes.</p>
+  </div>
+</section>
+
+<!-- 5. Recent rooms -->
+<section class="work on-dark" id="work" aria-labelledby="work-h">
+  <div class="wrap">
+    <div class="work__head">
+      <h2 id="work-h">Recent rooms</h2>
+      <span class="soon" aria-disabled="true">See all the work</span>
+    </div>
+    <ul class="rooms">
+      <li class="room room--tall"><figure><img src="assets/plaster-silver-fireplace-tall.jpg" width="1152" height="1536" loading="lazy" style="object-position:50% 30%" alt="A two-story great room with a tall fireplace wall in silver plaster."><figcaption><b>Two-story great room</b> · silver plaster fireplace</figcaption></figure></li>
+      <li class="room room--wide"><figure><img src="assets/ceiling-brick-barrel-kitchen-wide.jpg" width="1800" height="1350" loading="lazy" style="object-position:45% 15%" alt="An old-world kitchen under a painted brick barrel vault."><figcaption><b>Old-world kitchen</b> · painted brick barrel <span class="nw">vault <span class="cf" title="Confirm technique">confirm</span></span></figcaption></figure></li>
+      <li class="room"><figure><img src="assets/oldworld-amore-dining-wall.jpg" width="1800" height="1350" loading="lazy" style="object-position:50% 40%" alt="A restaurant dining room wall of crumbling old-world plaster and exposed brick around green-shuttered windows."><figcaption><b>Restaurant dining room</b> · old-world plaster and brick, Amoré</figcaption></figure></li>
+      <li class="room"><figure><img src="assets/metallic-rusted-iron-lounge.jpg" width="1800" height="1350" loading="lazy" alt="A lounge with deep rust-brown iron-look walls behind round leather chairs."><figcaption><b>Lounge</b> · rusted iron walls</figcaption></figure></li>
+      <li class="room room--wide room--phone-hide"><figure><img src="assets/plaster-bronze-media-wall.jpg" width="1800" height="1350" loading="lazy" style="object-position:50% 45%" alt="A media room wall in dark bronze metallic plaster framed by stacked stone."><figcaption><b>Media room</b> · bronze metallic plaster</figcaption></figure></li>
+      <li class="room room--tall"><figure><img src="assets/plaster-silver-barrel-hallway.jpg" width="1152" height="1536" loading="lazy" style="object-position:50% 25%" alt="An entry hall with a softly glowing silver plaster barrel ceiling leading to arched black doors."><figcaption><b>Entry hall</b> · silver plaster barrel ceiling</figcaption></figure></li>
+      <li class="room room--big"><figure><img src="assets/mural-safari-desert-zebras.jpg" width="1800" height="1456" loading="lazy" style="object-position:50% 45%" alt="A painted desert mural of red rock and blue sky behind two mounted zebras."><figcaption><b>Safari room</b> · desert mural. The zebras are the owner’s. The desert is ours.</figcaption></figure></li>
+      <li class="room room--phone-hide"><figure><img src="assets/ceiling-gold-leaf-fretwork.jpg" width="1800" height="1350" loading="lazy" alt="A kitchen ceiling in gold leaf with an ornate gold fretwork band."><figcaption><b>Kitchen</b> · gold leaf ceiling</figcaption></figure></li>
+      <li class="room"><figure><img src="assets/mural-believe-beast-mode.jpg" width="1800" height="1350" loading="lazy" style="object-position:30% 55%" alt="A basement wall mural spelling BELIEVE in bold, brightly painted letters."><figcaption><b>Basement</b> · BELIEVE mural</figcaption></figure></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 6. How it works -->
+<section class="how" id="how" aria-labelledby="how-h">
+  <div class="wrap">
+    <div class="how__top">
+      <div>
+        <h2 id="how-h">Your sample is the standard.</h2>
+        <p class="how__intro">Dave’s rule: “I can’t read your mind.” So we start with yours, and we don’t touch your wall until you’ve approved a sample.</p>
+        <figure class="how__photo">
+          <img src="assets/process-troweling-ladder.jpg" width="1800" height="1350" loading="lazy" alt="A crew member on a ladder troweling a warm plaster finish onto a wall.">
+        </figure>
+      </div>
+      <ol class="steps">
+        <li><div><h3>Tell us about the room.</h3><p>Send the form or call. Photos, the feel you’re after, your designer’s name if you have one.</p></div></li>
+        <li><div><h3>Dave comes out.</h3><p>He looks at the space, the light, and what’s already there.</p></div></li>
+        <li><div><h3>We make samples.</h3><p>Real samples of your finish, in your colors, at $100 <span class="nw">each. <span class="cf" title="Credited to the job if you go ahead?">confirm: credited to the job?</span></span></p></div></li>
+        <li><div><h3>You approve one.</h3><p>If we’re not there yet, we run it again. The approved sample becomes the standard for the whole job.</p></div></li>
+        <li><div><h3>Written price, then the work.</h3><p>The same crew of three, from first coat to final walk-through.</p></div></li>
+      </ol>
+    </div>
+    <div class="how__bottom">
+      <div class="price">
+        <h3>What affects the price</h3>
+        <ul>
+          <li>Size of the surface</li>
+          <li>How many passes the finish needs</li>
+          <li>The materials</li>
+          <li>Access (ceilings, scaffolding)</li>
+        </ul>
+        <p>No price list, because no two jobs are alike.</p>
+      </div>
+      <div class="homework">
+        <h3>Before the visit, gather:</h3>
+        <ul>
+          <li>The feel or theme of the house</li>
+          <li>A few reference photos (magazines, Pinterest, Architectural Digest)</li>
+          <li>Fabric, tile or paint samples to match</li>
+          <li>Which rooms and surfaces</li>
+          <li>Your designer’s and builder’s names, if you have them</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. Designers & builders: spec sheet -->
+<section class="des on-dark" id="designers" aria-labelledby="des-h">
+  <div class="wrap des__grid">
+    <div>
+      <h2 id="des-h">You lead. We follow.</h2>
+      <p class="des__lead">We’re not decorators. We’re the hands that make your design real. We work to your spec, your colors and your references. Your client hears from us only when you want them to. Nothing gets posted without your OK, and you get the credit.</p>
+      <a class="btn btn--light" href="#contact" data-role="Interior designer">Send us a project</a>
+    </div>
+    <div>
+      <div class="sheet__head"><span>For designers &amp; builders</span><span>Liquid Tapestries</span></div>
+      <dl class="sheet">
+        <div class="sheet__row"><dt>Samples</dt><dd>Signed samples, so the finished wall matches what your client approved</dd></div>
+        <div class="sheet__row"><dt>Billing</dt><dd>Billing your way: to you or to your client</dd></div>
+        <div class="sheet__row"><dt>Builders</dt><dd>Problems solved (beams over ductwork, stone where stone won’t fit, trim that won’t match, a hood that needs to look old)</dd></div>
+        <div class="sheet__row"><dt>Insurance</dt><dd>Insurance certificate on <span class="nw">request <span class="cf" title="Confirm">confirm</span></span></dd></div>
+        <div class="sheet__row"><dt>Timing</dt><dd>Book us early. Most of our designers call when the house breaks ground.</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- 8. About Dave -->
+<section class="about" id="about" aria-labelledby="about-h">
+  <div class="wrap">
+    <h2 id="about-h">He wrote the book. Literally.</h2>
+    <div class="about__grid">
+      <figure class="about__photo">
+        <img src="assets/dave-portrait-selfie.jpg" width="1800" height="1350" loading="lazy" style="object-position:70% 35%" alt="Dave Schmidt, smiling in a paint-spattered T-shirt, beside a bold painted dog on a polka-dot and harlequin background.">
+        <figcaption>Dave Schmidt</figcaption>
+      </figure>
+      <div>
+        <p>Dave Schmidt has been painting walls that fool people since about <span class="nw">1985 <span class="cf" title="Confirm the year">confirm</span>.</span> In the ’90s he co-owned Prismatic Painting Studio, a decorative-painting school in Cincinnati, and taught the craft on stage and on video. In 2001 he co-wrote <em>Marvelous Murals You Can Paint</em> with muralist Gary Lord. Today he works with a crew of three on homes and restaurants across the Indianapolis area, mostly for designers and builders who’ve called him for years.</p>
+        <div class="book">
+          <p class="book__k">The book</p>
+          <p class="book__t">Marvelous Murals You Can Paint</p>
+          <p class="book__m">Dave Schmidt and Gary Lord · North Light Books · 2001</p>
+        </div>
+        <blockquote class="quote">
+          <p style="margin:0">“Make the room exciting. Make the room what they want.”</p>
+          <cite>Dave, in his own words</cite>
+        </blockquote>
+      </div>
+    </div>
+    <figure class="beam">
+      <img src="assets/dave-woodgraining-beam-2.jpg" width="1800" height="1350" loading="lazy" alt="Dave on a ladder brushing wood grain onto a ceiling beam, turning it into rich oak.">
+    </figure>
+  </div>
+</section>
+
+<!-- 9. Partners (placeholders) -->
+<section class="partners" aria-labelledby="partners-h">
+  <div class="wrap">
+    <div class="partners__grid">
+      <h2 id="partners-h">What partners say</h2>
+      <div>
+        <blockquote class="ph"><p>“[Two-line quote from Jennifer O’Connor, Dare 2 Design — requested]”</p><footer>Jennifer O’Connor, Dare 2 <span class="nw">Design <span class="cf" title="Name and quote need her OK">confirm</span></span></footer></blockquote>
+        <blockquote class="ph"><p>“[Two-line quote from Brad Bowman, Homes by Design — requested]”</p><footer>Brad Bowman, Homes by <span class="nw">Design <span class="cf" title="Name and quote need his OK">confirm</span></span></footer></blockquote>
+        <blockquote class="ph"><p>“[One-line quote from Gary Lord — requested]”</p><footer>Gary Lord, muralist and co-author</footer></blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. In your home -->
+<section class="home" aria-labelledby="home-h">
+  <figure class="home__photo">
+    <img src="assets/process-crew-troweling-chimney.jpg" width="1800" height="1350" loading="lazy" alt="Two crew members on ladders troweling pale plaster onto a tall chimney wall.">
+  </figure>
+  <div class="home__body">
+    <h2 id="home-h">Easy to have in your home</h2>
+    <ul>
+      <li>The same three people every day</li>
+      <li>Floors and finished work protected; clean at the end of every day</li>
+      <li>Private clients welcome. We never post a home without permission, and we’re happy to sign an NDA.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 11. Start a project -->
+<section class="contact" id="contact" aria-labelledby="contact-h">
+  <div class="wrap contact__grid">
+    <div class="contact__side">
+      <h2 id="contact-h">Start the conversation early.</h2>
+      <p class="contact__intro">Most of our projects are planned months ahead, often when the house breaks ground. Tell us a little, and Dave will call you within one business <span class="nw">day. <span class="cf" title="Confirm response time">confirm</span></span></p>
+      <a class="contact__call" href="tel:+13172014953">Call Dave<b>(317) 201-4953</b></a>
+    </div>
+
+    <div>
+      <form class="form" id="form" novalidate action="https://formsubmit.co/dshawk4953@yahoo.com" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="_subject" value="New project inquiry from liquidtapestries.com">
+        <input type="hidden" name="_next" value="https://liquidtapestries.com/thanks/">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="Finishes" id="finishes-joined" value="">
+        <div class="hp" aria-hidden="true"><label for="hp-field">Leave this empty</label><input type="text" name="_honey" id="hp-field" tabindex="-1" autocomplete="off"></div>
+        <fieldset class="f f--full" id="fs-role" aria-describedby="e-role">
+          <legend>I am a… <span class="req" aria-hidden="true">*</span><span class="vh">(required)</span></legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="role" value="Homeowner" required><span>Homeowner</span></label>
+            <label class="chip"><input type="radio" name="role" value="Interior designer"><span>Interior designer</span></label>
+            <label class="chip"><input type="radio" name="role" value="Builder"><span>Builder</span></label>
+            <label class="chip"><input type="radio" name="role" value="Architect"><span>Architect</span></label>
+          </div>
+          <p class="err" id="e-role"></p>
+        </fieldset>
+        <div class="f">
+          <label for="name">Name <span class="req" aria-hidden="true">*</span></label>
+          <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="e-name">
+          <p class="err" id="e-name"></p>
+        </div>
+        <div class="f">
+          <label for="phone">Phone <span class="req" aria-hidden="true">*</span></label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required aria-describedby="e-phone">
+          <p class="err" id="e-phone"></p>
+        </div>
+        <div class="f">
+          <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+          <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="e-email">
+          <p class="err" id="e-email"></p>
+        </div>
+        <div class="f">
+          <label for="city">Project city <span class="req" aria-hidden="true">*</span></label>
+          <input id="city" name="city" type="text" autocomplete="address-level2" required aria-describedby="e-city">
+          <p class="err" id="e-city"></p>
+        </div>
+        <fieldset class="f f--full">
+          <legend>What are you thinking about? <span class="opt">Pick any</span></legend>
+          <div class="chips">
+            <label class="chip"><input type="checkbox" name="finish" value="Venetian plaster"><span>Venetian plaster</span></label>
+            <label class="chip"><input type="checkbox" name="finish" value="Marble"><span>Marble</span></label>
+            <label class="chip"><input type="checkbox" name="finish" value="Wood grain"><span>Wood grain</span></label>
+            <label class="chip"><input type="checkbox" name="finish" value="Mural"><span>Mural</span></label>
+            <label class="chip"><input type="checkbox" name="finish" value="Ceiling"><span>Ceiling</span></label>
+            <label class="chip"><input type="checkbox" name="finish" value="Metallic or leaf"><span>Metallic or leaf</span></label>
+            <label class="chip"><input type="checkbox" name="finish" value="Old-world room"><span>Old-world room</span></label>
+            <label class="chip"><input type="checkbox" name="finish" value="Sculpted stone"><span>Sculpted stone</span></label>
+            <label class="chip"><input type="checkbox" name="finish" value="Not sure yet"><span>Not sure yet</span></label>
+          </div>
+        </fieldset>
+        <div class="f f--full">
+          <label for="rooms">Which rooms or surfaces?</label>
+          <input id="rooms" name="rooms" type="text">
+        </div>
+        <fieldset class="f">
+          <legend>New build or existing home?</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="build" value="New build"><span>New build</span></label>
+            <label class="chip"><input type="radio" name="build" value="Existing home"><span>Existing home</span></label>
+          </div>
+        </fieldset>
+        <div class="f">
+          <label for="when">When do you need it?</label>
+          <select id="when" name="when">
+            <option value="">Choose one</option>
+            <option>This year</option>
+            <option>Next 6 months</option>
+            <option>6–12 months</option>
+            <option>Just planning</option>
+          </select>
+        </div>
+        <div class="f f--full">
+          <label for="partner">Working with a designer or builder? Who?</label>
+          <input id="partner" name="partner" type="text">
+        </div>
+        <div class="f f--full">
+          <label for="photos">Inspiration photos</label>
+          <div class="file">
+            <input id="photos" name="attachment" type="file" accept="image/*,.pdf" multiple aria-describedby="photos-list">
+            <p class="file__list" id="photos-list" hidden></p>
+            <p class="file__hint">Up to 10 MB total.</p>
+          </div>
+        </div>
+        <div class="f f--full">
+          <label for="notes">Anything else?</label>
+          <textarea id="notes" name="notes" placeholder="The feel you’re going for"></textarea>
+        </div>
+        <div class="submit">
+          <button class="btn btn--ink" type="submit" id="send-btn">Send to Dave</button>
+          <p>No spam, no sales calls. Just Dave.</p>
+        </div>
+      </form>
+
+      <div class="ty on-dark" id="thanks" hidden tabindex="-1">
+        <h3 id="ty-h">Thanks, <span data-first>there</span>. Dave will call you within one business <span class="nw">day. <span class="cf" title="Confirm response time">confirm</span></span></h3>
+        <p class="ty__k">While you wait, gather these:</p>
+        <ul>
+          <li>The feel or theme of the house</li>
+          <li>A few reference photos (magazines, Pinterest, Architectural Digest)</li>
+          <li>Fabric, tile or paint samples to match</li>
+          <li>Which rooms and surfaces</li>
+          <li>Your designer’s and builder’s names, if you have them</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot on-dark">
+  <div class="wrap foot__in">
+    <span class="foot__name">Liquid Tapestries</span>
+    <span>Decorative finishes by Dave Schmidt</span>
+    <span>Indianapolis area, limited travel</span>
+    <span class="nw">Call <a href="tel:+13172014953">(317) 201-4953</a></span>
+    <span>© 2026</span>
+  </div>
+</footer>
+
+<div class="pbar" role="region" aria-label="Quick contact">
+  <a class="btn btn--line" href="tel:+13172014953">Call Dave</a>
+  <a class="btn btn--accent" href="#contact">Start a project</a>
+</div>
+
+<p class="vh" aria-live="polite" id="announcer"></p>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // ----- Real, or painted? -----
+  var games = Array.prototype.slice.call(document.querySelectorAll('.game'));
+  var total = games.length, answered = 0, right = 0;
+  var announcer = document.getElementById('announcer');
+  var scoreNum = document.querySelector('[data-score-num]');
+  var scoreMsg = document.querySelector('[data-score-msg]');
+
+  function scoreText(){
+    if (answered === total) return 'You got ' + right + ' of ' + total + '.' + (right === total ? ' Sharp eyes.' : ' Don’t worry. Most people guess wrong.');
+    return right + ' of ' + answered + ' so far. ' + (total - answered) + ' still to guess.';
+  }
+  games.forEach(function(g){
+    var box = g.querySelector('.answer__btns');
+    // Both buttons look the same; shuffle their order per round so position gives nothing away.
+    if (Math.random() < 0.5) box.appendChild(box.firstElementChild);
+    var btns = box.querySelectorAll('[data-guess]');
+    // Reserve the answer block's height now (longest possible line), so revealing never moves the page.
+    var longest = Array.prototype.reduce.call(btns, function(a, b){ var t = b.textContent.trim(); return t.length > a.length ? t : a; }, '');
+    g.querySelector('[data-you]').textContent = 'You said “' + longest + '.” Most people do. Score: 6 of 6.';
+    Array.prototype.forEach.call(btns, function(b){
+      b.addEventListener('click', function(){
+        if (g.classList.contains('is-answered')) return;
+        var ok = b.getAttribute('data-guess') === g.getAttribute('data-correct');
+        answered++; if (ok) right++;
+        var host = g.closest('.opener') || g;
+        g.classList.add('is-answered'); host.classList.add('is-answered');
+        var you = g.querySelector('[data-you]');
+        you.textContent = 'You said “' + b.textContent.trim() + '.” ' + (ok ? 'Good eye.' : 'Most people do.') + ' Score: ' + right + ' of ' + answered + '.';
+        Array.prototype.forEach.call(btns, function(x){ x.disabled = true; x.setAttribute('tabindex', '-1'); });
+        scoreNum.textContent = right;
+        scoreMsg.textContent = scoreText();
+        var label = host.querySelector('.label');
+        var verdict = g.querySelector('.verdict').textContent.replace(/\s*confirm\s*$/, '');
+        announcer.textContent = verdict + ' ' + (label ? label.textContent + '. ' : '') + you.textContent;
+        var next = g.querySelector('.next');
+        if (next) next.focus({ preventScroll: true });
+      });
+    });
+  });
+  // "Next one" slides the next round into view (also inside the phone swipe deck) and puts focus on its first button.
+  document.querySelectorAll('a.next').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var t = document.querySelector(a.getAttribute('href'));
+      if (!t) return;
+      e.preventDefault();
+      t.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start', inline: 'start' });
+      var f = t.querySelector('.guess:not([disabled])') || t;
+      f.focus({ preventScroll: true });
+    });
+  });
+
+  // ----- Finishes: hover / focus / tap shows the photo (desktop list; segmented control on phones) -----
+  var items = Array.prototype.slice.call(document.querySelectorAll('.fin__item'));
+  var panelImgs = document.querySelectorAll('.fin-panel__frame img');
+  var cap = document.querySelector('[data-fin-cap]'), pName = document.querySelector('[data-fin-name]'), pDesc = document.querySelector('[data-fin-desc]');
+  function activate(i){
+    items.forEach(function(it, n){
+      it.classList.toggle('is-active', n === i);
+      it.querySelector('.fin__name').setAttribute('aria-pressed', n === i ? 'true' : 'false');
+    });
+    Array.prototype.forEach.call(panelImgs, function(im, n){ im.classList.toggle('is-on', n === i); });
+    cap.textContent = items[i].getAttribute('data-cap');
+    pName.textContent = items[i].querySelector('.fin__name').textContent;  // includes the final period
+    pDesc.textContent = items[i].querySelector('.fin__desc').textContent;
+  }
+  var fine = window.matchMedia('(hover: hover) and (min-width: 900px)');
+  items.forEach(function(it, i){
+    var b = it.querySelector('.fin__name');
+    b.addEventListener('mouseenter', function(){ if (fine.matches) activate(i); });
+    b.addEventListener('focus', function(){ if (window.innerWidth >= 900) activate(i); });
+    b.addEventListener('click', function(){ activate(i); });
+  });
+
+  // ----- Phone menu -----
+  var mb = document.querySelector('.menu-btn'), mn = document.getElementById('mnav');
+  function setMenu(open){ mb.setAttribute('aria-expanded', open ? 'true' : 'false'); mn.classList.toggle('is-open', open); mb.textContent = open ? 'Close' : 'Menu'; }
+  mb.addEventListener('click', function(){ setMenu(mb.getAttribute('aria-expanded') !== 'true'); });
+  mn.addEventListener('click', function(e){ if (e.target.closest('a')) setMenu(false); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && mn.classList.contains('is-open')) { setMenu(false); mb.focus(); } });
+
+  // ----- "Send us a project" pre-picks Interior designer -----
+  document.querySelectorAll('[data-role]').forEach(function(a){
+    a.addEventListener('click', function(){
+      var r = document.querySelector('input[name="role"][value="' + a.getAttribute('data-role') + '"]');
+      if (r) r.checked = true;
+    });
+  });
+
+  // ----- Form: validates here, then sends to Dave by email (FormSubmit) -----
+  var form = document.getElementById('form');
+  var files = document.getElementById('photos'), fl = document.getElementById('photos-list');
+  files.addEventListener('change', function(){
+    if (!files.files.length) { fl.hidden = true; return; }
+    var names = Array.prototype.map.call(files.files, function(f){ return f.name; });
+    fl.textContent = files.files.length + (files.files.length === 1 ? ' file: ' : ' files: ') + names.join(', ');
+    fl.hidden = false;
+  });
+  function setErr(el, errId, msg){
+    document.getElementById(errId).textContent = msg || '';
+    if (el) el.setAttribute('aria-invalid', msg ? 'true' : 'false');
+  }
+  function validate(){
+    var bad = [];
+    var role = form.querySelector('input[name="role"]:checked');
+    document.getElementById('e-role').textContent = role ? '' : 'Pick one so Dave knows who he’s calling.';
+    document.getElementById('fs-role').classList.toggle('fieldset-invalid', !role);
+    if (!role) bad.push(form.querySelector('input[name="role"]'));
+    var name = form.name.value.trim();
+    setErr(form.name, 'e-name', name ? '' : 'Please add your name.'); if (!name) bad.push(form.name);
+    var digits = form.phone.value.replace(/\D/g, '');
+    var pm = !digits ? 'Please add a phone number.' : (digits.length < 10 ? 'That looks short. Include the area code.' : '');
+    setErr(form.phone, 'e-phone', pm); if (pm) bad.push(form.phone);
+    var em = form.email.value.trim();
+    var emsg = !em ? 'Please add your email.' : (/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em) ? '' : 'That email doesn’t look right.');
+    setErr(form.email, 'e-email', emsg); if (emsg) bad.push(form.email);
+    var city = form.city.value.trim();
+    setErr(form.city, 'e-city', city ? '' : 'Which city is the project in?'); if (!city) bad.push(form.city);
+    return bad;
+  }
+  var tried = false;
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    tried = true;
+    var bad = validate();
+    if (bad.length) { bad[0].focus(); return; }
+    var total = 0; Array.prototype.forEach.call(files.files, function(f){ total += f.size; });
+    if (total > 10 * 1024 * 1024) { fl.hidden = false; fl.textContent = 'Those photos add up to more than 10 MB. Please pick fewer or smaller ones.'; files.focus(); return; }
+    var boxes = form.querySelectorAll('input[name="finish"]');
+    var picked = Array.prototype.filter.call(boxes, function(b){ return b.checked; }).map(function(b){ return b.value; });
+    document.getElementById('finishes-joined').value = picked.join(', ') || 'Not given';
+    Array.prototype.forEach.call(boxes, function(b){ b.disabled = true; });   // send one tidy "Finishes" line instead
+    var btn = document.getElementById('send-btn'); btn.disabled = true; btn.textContent = 'Sending…';
+    HTMLFormElement.prototype.submit.call(form);
+  });
+  // Coming back with the browser's Back button: make the form usable again.
+  window.addEventListener('pageshow', function(){
+    Array.prototype.forEach.call(form.querySelectorAll('input[name="finish"]'), function(b){ b.disabled = false; });
+    var btn = document.getElementById('send-btn'); btn.disabled = false; btn.textContent = 'Send to Dave';
+  });
+  // After a first failed send, errors clear as you type (not on blur, so nothing shifts under a click).
+  form.addEventListener('input', function(e){ if (tried && e.target.getAttribute('aria-invalid') === 'true') validate(); });
+  form.addEventListener('change', function(e){ if (tried && e.target.name === 'role') validate(); });
+})();
+</script>
+</body>
 </html>
