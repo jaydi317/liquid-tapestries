@@ -7,13 +7,13 @@
 <meta name="robots" content="noindex">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2712%27 fill=%27%231F3B35%27/%3E%3Ctext x=%2732%27 y=%2742%27 font-family=%27Georgia,serif%27 font-size=%2730%27 fill=%27%23F2F0EB%27 text-anchor=%27middle%27%3ELT%3C/text%3E%3C/svg%3E">
 <meta property="og:title" content="Liquid Tapestries · Decorative finishes by Dave Schmidt">
-<meta property="og:image" content="https://liquidtapestries.com/assets/marble-black-backsplash-painted-outlet.jpg">
+<meta property="og:image" content="https://liquidtapestries.com/assets/marble-outlet-after.jpg">
 <meta property="og:url" content="https://liquidtapestries.com/">
 <meta name="description" content="Venetian plaster, hand-painted marble, wood graining, murals and sculpted stone, made by hand by Dave Schmidt and his crew of three for Indianapolis-area homes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital@1&family=Young+Serif&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="assets/marble-black-backsplash-painted-outlet.jpg">
+<link rel="preload" as="image" href="assets/marble-outlet-after.jpg">
 <style>
 :root{
   --green:#1F3B35;
@@ -113,11 +113,17 @@ h1 .cf,h2 .cf,h3 .cf{vertical-align:.9em}
 
 /* ---------- Hero: game photo + headline ---------- */
 .opener{position:relative;color:#fff;background:#141312;overflow:hidden;isolation:isolate}
-.opener__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:47% 42%;z-index:-2}
+.opener__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 34%;z-index:-2}
+.opener__before{opacity:0;transition:opacity .45s ease}
+.opener.show-before .opener__before{opacity:1}
+.opener.show-before .stamp{opacity:0!important;animation:none}
+.before-btn{font:inherit;font-weight:700;color:inherit;background:none;border:0;border-bottom:2px solid var(--accent);padding:0 0 1px;margin-left:.35em;cursor:pointer}
+.before-btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+@media (prefers-reduced-motion:reduce){.opener__before{transition:none}}
 .opener::before{content:"";position:absolute;inset:0;z-index:-1;background:
   linear-gradient(180deg,rgba(10,10,9,.55) 0%,rgba(10,10,9,0) 20%),
-  linear-gradient(0deg,rgba(10,12,11,.88) 0%,rgba(10,12,11,.55) 40%,rgba(10,12,11,0) 72%)}
-.opener__game{position:relative;padding:clamp(226px,58vw,320px) var(--gut) 28px}
+  linear-gradient(0deg,rgba(10,12,11,.88) 0%,rgba(10,12,11,.5) 34%,rgba(10,12,11,0) 58%)}
+.opener__game{position:relative;padding:clamp(300px,78vw,360px) var(--gut) 28px}
 .count{font-size:var(--t-15);font-weight:600;margin:0 0 .5em}
 .opener .count{text-shadow:0 1px 3px rgba(0,0,0,.8)}
 .opener__q{font-family:var(--game);font-size:46px;line-height:.98;letter-spacing:-.02em;margin:0 0 .2em;max-width:none}
@@ -167,12 +173,12 @@ h1 .cf,h2 .cf,h3 .cf{vertical-align:.9em}
   .lede .wrap{padding:0;margin:0}
   .lede__sub{font-size:19px}
   .opener{height:100%}
-  .opener__img{object-position:49% 40%}
+  .opener__img{object-position:50% 36%}
   .opener__game{position:absolute;left:0;right:0;bottom:0;padding:0 clamp(28px,3vw,48px) clamp(26px,4vh,44px)}
   .opener__q{font-size:clamp(56px,5vw,78px)}
   .opener .answer{min-height:104px;max-width:640px}
   .opener .answer__btns{max-width:420px}
-  .opener .stamp{top:20%;right:9%}
+  .opener .stamp{top:auto;bottom:47%;right:5%}
   .opener .label{top:24px;left:clamp(28px,3vw,48px)}
 }
 @media (min-width:600px) and (max-width:1099px){
@@ -474,25 +480,27 @@ input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px soli
 <div class="hero" id="top">
   <!-- Guess 1 of 6, over the photo -->
   <section class="opener on-dark" aria-label="Guess 1 of 6">
-    <img class="opener__img" src="assets/marble-black-backsplash-painted-outlet.jpg" width="1800" height="1350" fetchpriority="high"
-      alt="Close-up of a black marble backsplash with wavy grey and white veins and a dark outlet cover set into it, above a matching marble countertop.">
+    <img class="opener__img" src="assets/marble-outlet-after.jpg" width="1124" height="1500" fetchpriority="high"
+      alt="Close-up of a black and white veined stone backsplash with an outlet cover that carries the same veins, above a matching stone countertop.">
+    <img class="opener__img opener__before" src="assets/marble-outlet-before.jpg" width="1124" height="1500" loading="lazy"
+      alt="Before: the same stone backsplash with a plain black outlet cover.">
     <div class="game opener__game" data-correct="painted">
       <p class="count">Guess 1 of 6</p>
       <p class="opener__q" id="q1">Real, or painted?</p>
-      <p class="opener__intro">Most people guess wrong. Make your guess.</p>
+      <p class="opener__intro">Look closely at the outlet cover. Make your guess.</p>
       <div class="answer">
         <div class="answer__btns" role="group" aria-labelledby="q1">
           <button class="guess" type="button" data-guess="real">Real</button>
           <button class="guess" type="button" data-guess="painted">Painted</button>
         </div>
         <div class="answer__result">
-          <p class="verdict"><strong>Painted.</strong> Even the outlet cover. Look closely: the veins run right across it.</p>
+          <p class="verdict"><strong>Painted.</strong> The stone is real. The outlet cover was plain black until Dave painted every vein onto it. <button class="before-btn" type="button" aria-pressed="false">See the before</button></p>
           <p class="you"><span data-you></span> <a class="next" href="#t2">Five more to go</a></p>
         </div>
       </div>
     </div>
     <span class="stamp" aria-hidden="true">Painted.</span>
-    <span class="label">Hand-painted black marble · backsplash</span>
+    <span class="label" data-after="Hand-painted outlet cover · real stone backsplash" data-before="Before · plain black outlet cover">Hand-painted outlet cover · real stone backsplash</span>
   </section>
 
   <!-- Hero copy -->
@@ -1124,6 +1132,14 @@ input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px soli
   // After a first failed send, errors clear as you type (not on blur, so nothing shifts under a click).
   form.addEventListener('input', function(e){ if (tried && e.target.getAttribute('aria-invalid') === 'true') validate(); });
   form.addEventListener('change', function(e){ if (tried && e.target.name === 'role') validate(); });
+  // Before/after on the opener: plain outlet cover vs. the painted one.
+  var bb = document.querySelector('.before-btn'), op = document.querySelector('.opener'), lab = op && op.querySelector('.label');
+  if (bb && op) bb.addEventListener('click', function(){
+    var on = op.classList.toggle('show-before');
+    bb.setAttribute('aria-pressed', on ? 'true' : 'false');
+    bb.textContent = on ? 'See the after' : 'See the before';
+    if (lab) lab.textContent = lab.getAttribute(on ? 'data-before' : 'data-after');
+  });
 })();
 </script>
 </body>
